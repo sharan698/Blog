@@ -8,8 +8,7 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script>
-</script>
+<link rel="shortcut icon" href="#">
 <body>
     <div id="header">
         <img id = "logoid" src="images/Logo.png" alt="Logo(Please refresh your page)">
@@ -23,51 +22,141 @@
     </div>
     <div class="rows">
         <div class="columns">
-            <h2>About</h2>
+            <h2 class="abt">About</h2>
+            <div style="border-bottom: 2px solid #EAE2B6; width: 7%;"></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
         </div>
         <div class="columns">
-            <h2>Education</h2>
-            <p>BACHELOR OF ENGINEERING IN COMPUTER SCIENCE</p>
-            <p>PRE-UNIVERSITY IN SCIENCE MAJOR(PCMC)</p>
-            <p>HIGH SCHOOL SECONDARY EDUCATION(X STD)</p></div>
+            <h2>Education</h2><br><br>
+            <button onclick="myfunc1()" class="dropbtn" data-toggle="dropdown dropdown-toggle">BACHELOR OF ENGINEERING IN COMPUTER SCIENCE
+            <span style="display: inline; float: right;">&#x25BC</span></button>
+            <div id="mydropdown1" class="dropdown-content">
+                <h3>Poojya Doodappa Appa College Of Engineering</h3><br><br><br><br>
+                <h5>Visvesvaraya Technological University (VTU)</h5><br><br><br><br>
+                <p>CGPA 6.66</p><br><br><br><br>
+                <p>2017 - 2021</p>
+            </div><br><br>
+            <button onclick="myfunc2()" class="dropbtn" data-toggle="dropdown dropdown-toggle">PRE-UNIVERSITY IN SCIENCE MAJOR(PCMC)
+            <span style="display: inline; float: right;">&#x25BC</span></button>
+            <div id="mydropdown2" class="dropdown-content">
+                <h3>Sir MV PU College</h3><br><br><br><br>
+                <h5>Karnataka Secondary Education Examination Board</h5><br><br><br><br>
+                <p>Percentage = 72</p><br><br><br><br>
+                <p>2015 - 2017</p></div><br><br>
+
+            <button onclick="myfunc3()" class="dropbtn" data-toggle="dropdown dropdown-toggle">HIGH SCHOOL SECONDARY EDUCATION(X STD)
+            <span style="display: inline; float: right;">&#x25BC</span></button>
+            <div id="mydropdown3" class="dropdown-content">
+                <h3>Vidya Bharati High School</h3><br><br><br><br>
+                <h5>Karnataka State Board</h5><br><br><br><br>
+                <p>Percentage = 72</p><br><br><br><br>
+                <p>2014 - 2015</p>
+        </div>
+        </div><br><br>
+        
         <div class="columns">
             <h2>My Skills</h2>
-            <h3>My Technical Skills</h3>
+            <br>
+            
+            <h3 class="skills" style="color: whitesmoke;">My Technical Skills</h3>
+            <br>
             <ul>
-                <h4>Web Technologies:</h4>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <h4>Programming Language:</h4>
-                    <li>Python</li>
-                    <h4>Database Language:</h4>
-                    <li>SQL</li>
-            </ul>
-            <h3>Hobbies and Interests</h3>
+               <li><p><strong>Web Technologies:</strong> HTML,CSS,Javascript</p></li>
+                <li><p><strong>Programming Language:</strong> Python</p></li>
+                <li><p><strong>Database Language:</strong> SQL</p></li>
+            </ul>    
+            <br>
+            <h3 class="hni" style="color: whitesmoke";>Hobbies and Interests</h3><br>
             <ul>
                 <li>Playing outdoor games and video games</li>
                 <li>Reading tech blogs</li>
                 <li>Watching Youtube</li>
             </ul>
         </div>
-        <div class="columns">
-            <h2>Projects</h2>
-            <h3>Toxic Comment Classifier</h3>
+        <div class="columns"><br><br>
+            <h2>Projects</h2><br><br>
+            <h3 >Toxic Comment Classifier</h3><br><br>
             <img class="image" src="images/toxic.jpeg" alt="toxicComment">
             <img class="image" src="images/non toxic.jpeg" alt="toxicComment">
-            <h3>Food responsive website</h3>
+            <h3>Food responsive website</h3><br><br>
             <img class="image" src="images/Food Desktop.png" alt="resopnsiveWebsite">
             <img class="image" src="images/Food mobile.png" alt="resopnsiveWebsite">
         </div>
-        <div class="columns">
-            <h2>Follow Me On</h2>
+        <div class="columns" id="socials">
+            <h2 class="fm" style="color: whitesmoke; background-color: #515E63;">Follow Me On</h2>
         <a href="https://github.com/sharan698" class="fa fa-github">Github</a>
         
         <a href="" class="fa fa-instagram"></a>
         <a href="" class="fa fa-linkedin"></a>
         <a href="" class="fa fa-google"></a>
         </div>
+        </div>
+    <div class="form"><h2>Contact Me:</h2><br><br>
+        <div class="leftcont">
+            <h3>Location:</h3><br>
+            <a href="https://www.google.com/maps/@16.2027845,77.3377248,16z" style="text-decoration:none;color:black;">Nijaligappa Colony,near garden,Raichur,karnataka,India</a><br>
+            <br>
+            <h3>E-Mail:</h3>
+            <a  class="maillink"  href="sharanpatil698@gmail.com" style="text-decoration:none;color: black;">sharanpatil698@gmail.com</a>
+        </div>
+        <div class="rightcont">
+            <form action="mailto: sharanpatil698@gmail.com">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname"><br><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname"><br><br>
+                <label for="email" id="email">Your E-Mail</label><br>
+                <input type="email" id="email"><br><br>
+                <label for="message">Your Message</label>
+                <textarea id="msg" rows=""></textarea><br><br>
+                <button id="btn" type="submit">Submit</button>
+
+
+
+
+            </form>
+        </div>
     </div>
+    <script>
+        function myfunc1() {
+            other2 = document.getElementById("mydropdown2");
+            if (other2.classList.contains("show")) {
+                other2.classList.remove("show");
+            }
+            other3 = document.getElementById("mydropdown3");
+        if (other3.classList.contains("show")) {
+            other3.classList.remove("show");
+        }
+        ele1 = document.getElementById("mydropdown1");
+        ele1.classList.toggle("show");
+    }
+    
+    function myfunc2() {
+        other1 = document.getElementById("mydropdown1");
+        if (other1.classList.contains("show")) {
+            other1.classList.remove("show");
+        }
+        other3 = document.getElementById("mydropdown3");
+        if (other3.classList.contains("show")) {
+            other3.classList.remove("show");
+        }
+        ele2 = document.getElementById("mydropdown2");
+        ele2.classList.toggle("show");
+    }
+    
+    function myfunc3() {
+        other2 = document.getElementById("mydropdown2");
+        if (other2.classList.contains("show")) {
+            other2.classList.remove("show");
+        }
+        other1 = document.getElementById("mydropdown1");
+        if (other1.classList.contains("show")) {
+            other1.classList.remove("show");
+        }
+        ele3 = document.getElementById("mydropdown3");
+        ele3.classList.toggle("show");
+    }
+        
+    </script>
 </body>
 </html>
